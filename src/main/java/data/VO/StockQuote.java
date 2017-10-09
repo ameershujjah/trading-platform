@@ -9,7 +9,7 @@ import java.math.BigDecimal;
  */
 @Data
 public class StockQuote {
-    String ticker;
-    String name;
-    BigDecimal price;
+    private String ticker;
+    private String name;
+    private BigDecimal price;
 }

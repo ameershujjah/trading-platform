@@ -9,6 +9,6 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class RequestParameter {
-    final String name;
-    final String value;
+    private final String name;
+    private final String value;
 }

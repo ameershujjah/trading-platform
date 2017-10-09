@@ -1,5 +1,6 @@
 package service;
 
+import data.VO.MonthlyStockQuote;
 import data.VO.StockQuote;
 
 /**
@@ -8,5 +9,7 @@ import data.VO.StockQuote;
 public interface StockQuoteService {
 
     public StockQuote getStockQuote(String ticker);
+
+    public MonthlyStockQuote getMonthlyStockQuote(String ticker);
 
 }

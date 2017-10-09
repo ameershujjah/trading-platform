@@ -5,6 +5,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
+import org.json.JSONObject;
 import service.ConsumerService;
 
 import java.io.BufferedReader;
@@ -39,6 +40,7 @@ public class HTTP implements ConsumerService {
                 result.append(line);
             }
             resultString = result.toString();
+            JSONObject obj = new JSONObject(resultString);
         } catch(java.io.IOException e) {
             log.error("Something went wrong" + e);
         }
